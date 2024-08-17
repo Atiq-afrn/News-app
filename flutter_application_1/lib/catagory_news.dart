@@ -138,7 +138,8 @@ class _CatagoryNewsState extends State<CatagoryNews> {
                                         mainAxisAlignment:
                                             MainAxisAlignment.spaceBetween,
                                         children: [
-                                          Padding(
+                                          Container(
+                                            width: 110,
                                             padding:
                                                 const EdgeInsets.only(left: 5),
                                             child: Text(
@@ -150,6 +151,7 @@ class _CatagoryNewsState extends State<CatagoryNews> {
                                                   fontSize: 10,
                                                   color: Colors.black,
                                                   fontWeight: FontWeight.w700),
+                                              overflow: TextOverflow.ellipsis,
                                             ),
                                           ),
                                           Padding(
@@ -158,7 +160,7 @@ class _CatagoryNewsState extends State<CatagoryNews> {
                                             child: Text(
                                               format.format(dateTime),
                                               style: GoogleFonts.poppins(
-                                                  fontSize: 10,
+                                                  fontSize: 9,
                                                   color: Colors.black54,
                                                   fontWeight: FontWeight.w500),
                                             ),
